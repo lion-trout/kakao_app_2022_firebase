@@ -1,0 +1,82 @@
+/* Friends.scss */
+@import url(common.scss);
+
+main{
+  height: 85.8%;
+  margin-top: 64px;
+}
+.load{
+  position: relative;
+  width: 100%; height: 100%;
+  background: #eee;
+  span{
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    font-size: 28px;
+  }
+}
+
+/* 검색창 */
+.search_box{
+  display: flex; flex-direction: row; justify-content: center; align-items: center;
+  height: 7.3%; min-height: 53px;
+}
+.search_inner{
+  display: flex; flex-direction: row; justify-content: space-between;
+  width: 88%; height: 26.5px;
+  background-color: #f1f2f4;
+  border-radius: 5px;
+  >i{
+    font-size: 16px;
+    color: #bebcc1;
+    align-self: center;
+    margin-left: 15px;
+  }
+  >input{
+    width: 90%;
+    background: transparent;
+    border: none;
+    padding: 0 15px;
+  }
+  ::placeholder{
+    text-align: center; transform: translateX(-5%);
+  }
+}
+
+/* main_section */
+.main_section{
+  >header{
+    height: 32px;
+    line-height: 32px;
+    color: #b6b5b1;
+    padding-left: 15px;
+    border: 1px solid #ebebeb; border-left: none; border-right: none;
+  }
+  >ul{
+    display: flex; flex-direction: column;
+    >li{
+      >a{
+        display: flex; flex-direction: row; align-items: center;
+        font-size: 16px;
+      }
+    }
+  }
+  .profile_img{
+    display: block;
+    width: 40px; height: 40px;
+    margin: 10px 15px;
+    overflow: hidden;
+  }
+  .profile_name{
+    flex: auto;
+  }
+  .profile_messages{
+    height: 30px;
+    line-height: 30px;
+    font-size: 10px;
+    color: #8e9399;
+    margin-right: 15px;
+    padding: 0 10px;
+    border-radius: 5px;
+    background: #f0f0f0;
+  }
+}

@@ -1,0 +1,125 @@
+/* more.css */
+@import url(common.scss);
+
+main{
+  height: 85.8%;
+  margin-top: 64px;
+}
+
+/* user_info */
+.user_info{
+  display: flex; align-items: center;
+  height: 72px;
+  border-bottom: 1px solid #ebebeb;
+}
+.profile_img{
+  width: 50px; height: 50px;
+  overflow: hidden;
+}
+.profile_info{
+  flex: auto;
+  display: flex; flex-direction: column;
+  .profile_name{
+    font-size: 16px; font-weight: bold;
+  }
+  .profile_email{
+    color: #8e9399;
+  }
+}
+.chat_img a{
+  font-size: 30px;
+  color: #513736;
+  margin-right: 15px;
+}
+
+/* user_menu */
+.user_menu{
+  height: 125px;
+  border-bottom: 1px solid #ebebeb;
+  >ul{
+    display: flex; flex-direction: row; align-items: center;
+    height: 100%;
+    >li{
+      flex: 1;
+      >a{
+        display: flex; flex-direction: column; align-items: center;
+        font-weight: bold;
+        color: #513736;
+        transition: transform 300ms linear 0s;
+        >i{
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+      }
+      >a:hover{
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+/* plus_friends */
+.plus_friends{
+  height: 280px;
+  border-bottom: 1px solid #ebebeb;
+  >header{
+    display: flex; justify-content: space-between;
+    font-size: 16px;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ebebeb;
+    >span{
+      color: #8e9399;
+    }
+  }
+  >.plus_list{
+    display: flex; flex-wrap: wrap;
+    >li{
+      display: flex; align-items: center;
+      width: 50%; height: 45px;
+      >a{
+        >i{
+          font-size: 16px;
+          margin: 0 15px;
+        }
+      }
+    }
+  }
+}
+
+/* more_app */
+.more_app{
+  padding: 15px;
+  >ul{
+    display: flex; flex-direction: row;
+    >li{
+      width: 75px;
+      >a{
+        display: flex; flex-direction: column; align-items: center;
+        width: 100%;
+      }
+      span.app_icon{
+       display: block;
+       width: 44px; height: 44px;
+       margin-bottom: 10px;
+       background: url(../images/empty.jpg) no-repeat 0 0;
+       background-size: cover;
+      }
+    }
+    :nth-child(1){
+      span.app_icon{
+       background-image: url(../images/kakaostory.png);
+      }
+    }
+    :nth-child(2){
+      span.app_icon{
+       background-image: url(../images/path.png);
+      }
+    }
+    :nth-child(3){
+      span.app_icon{
+       background-image: url(../images/kakaofriends.png);
+      }
+    }
+  }
+}
