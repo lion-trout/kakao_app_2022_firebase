@@ -4,9 +4,9 @@
   height: 100vh;
   background: #f9df1a;
   .logo{
-    width: 257px; height: 246px;
-    background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FdSsTbw%2FbtrGRHFsSwK%2FqzCZVoq5e3tSw5KIP2S0l0%2Fimg.png") no-repeat 0 0;
-    transform: scale(0.5);
+    width: 257px; height: 300px;
+    background: url("https://cdn-icons-png.flaticon.com/512/2111/2111466.png") no-repeat 0 0;
+    background-size: contain;
   }
   .authBtns{
     display: flex; justify-content: space-between;
