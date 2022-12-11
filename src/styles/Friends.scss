@@ -57,6 +57,7 @@ main{
       >a{
         display: flex; flex-direction: row; align-items: center;
         font-size: 16px;
+        flex-wrap: nowrap;
       }
     }
   }
